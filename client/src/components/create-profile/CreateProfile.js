@@ -132,7 +132,8 @@ class CreateProfile extends Component {
     ];
 
     return (
-      <div className="create-profile">
+      <div className="navBarDark">
+      <div className="create-profile p-5">
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
@@ -232,6 +233,7 @@ class CreateProfile extends Component {
             </div>
           </div>
         </div>
+      </div>
       </div>
     );
   }

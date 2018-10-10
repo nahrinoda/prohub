@@ -46,8 +46,8 @@ class PostForm extends Component {
     const { errors } = this.state;
 
     return (
-      <div className="post-form mb-3">
-        <div className="card card-info">
+      <div className="post-form mb-2 pt-4">
+        <div className="card card-info mt-5">
           <div className="card-header bg-info text-white">Say Somthing...</div>
           <div className="card-body">
             <form onSubmit={this.onSubmit}>

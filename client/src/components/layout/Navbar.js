@@ -6,6 +6,8 @@ import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
 import { clearCurrentProfile } from "../../actions/profileActions";
 
+import smalllogo from "./landingImgAndVid/smalllogo.png";
+
 class Navbar extends Component {
   onLogoutClick(e) {
     e.preventDefault();
@@ -41,7 +43,7 @@ class Navbar extends Component {
               style={{ width: "25px", marginRight: "5px" }}
               title="You have to have a Gravatar connected to your email to display and image"
             />
-            logout
+            Logout
           </a>
         </li>
       </ul>
@@ -50,24 +52,24 @@ class Navbar extends Component {
     const guestLinks = (
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          <Link className="nav-link" to="/register">
-            Sign Up
+          <Link className="nav-link text-white" to="/register">
+            Sign-Up
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/login">
-            Login
+          <Link className="nav-link ml-2 text-white" to="/login">
+            Log-In
           </Link>
         </li>
       </ul>
     );
 
     return (
-      <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
+      <nav className="navbar navbar-expand-lg col-12 justify-content-center shadow p-0 navbar-dark font-weight-bold">
         <div className="container">
-          <Link className="navbar-brand" to="/">
-            PROHUB
-          </Link>
+         <Link className="navbar-brand" to="/">
+            <img src={smalllogo} className="smallLogo"/>
+          </Link>  
           <button
             className="navbar-toggler"
             type="button"
@@ -80,8 +82,7 @@ class Navbar extends Component {
           <div className="collapse navbar-collapse" id="mobile-nav">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <Link className="nav-link" to="/profiles">
-                  {" "}
+                <Link className="nav-link ml-2 text-white" to="/profiles">
                   Users
                 </Link>
               </li>

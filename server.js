@@ -3,6 +3,11 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const passport = require("passport");
 
+// Add path for th image upload//
+// const path = require( 'path' );
+// const router = express.Router();
+// end of what add it for the images upload
+
 const users = require("./routes/api/users");
 const profile = require("./routes/api/profile");
 const posts = require("./routes/api/posts");

@@ -186,7 +186,7 @@ class CreateProfile extends Component {
     ];
 
     return (
-      <div className="create-profile">
+      <div className="create-profile p-5">
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">

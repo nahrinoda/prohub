@@ -31,7 +31,9 @@ class Post extends Component {
     }
 
     return (
-      <div className="post">
+      <div>
+      <div className="navBarDarkLong shadow"></div>
+      <div className="post ">
         <div className="comtainer">
           <div className="row">
             <div className="col-md-12">
@@ -42,6 +44,7 @@ class Post extends Component {
             </div>
           </div>
         </div>
+      </div>
       </div>
     );
   }

@@ -1,7 +1,7 @@
 // start with rcc then tab
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { withRouter } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { registerUser } from "../../actions/authActions";
 import TextFieldGroup from "../common/TextFieldGroup";
@@ -53,48 +53,52 @@ class Register extends Component {
     const { errors } = this.state;
 
     return (
-      <div className="register">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center">Sign Up</h1>
-              <p className="lead text-center">Create your Prohub account</p>
-              <form noValidate onSubmit={this.onSubmit}>
-                <TextFieldGroup
-                  placeholder="Name"
-                  name="name"
-                  value={this.state.name}
-                  onChange={this.onChange}
-                  error={errors.name}
-                />
-                <TextFieldGroup
-                  placeholder="Email"
-                  name="email"
-                  type="email"
-                  value={this.state.email}
-                  onChange={this.onChange}
-                  error={errors.email}
-                  info=" This site uses Gravatar so if you want a profile image, use
-                  a Gravatar email"
-                />
-                <TextFieldGroup
-                  placeholder="Passowrd"
-                  name="password"
-                  type="password"
-                  value={this.state.password}
-                  onChange={this.onChange}
-                  error={errors.password}
-                />
-                <TextFieldGroup
-                  placeholder="Confirm Passowrd"
-                  name="password2"
-                  type="password"
-                  value={this.state.password2}
-                  onChange={this.onChange}
-                  error={errors.password2}
-                />
-                <input type="submit" className="btn btn-info btn-block mt-4" />
-              </form>
+      <div className="navBarDark shadow">
+        <div className="register p-5 shadow">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-5 m-auto">
+                <h1 className="display-4 text-center">Sign Up</h1>
+                <p className="lead text-center">Create your QUICKS account</p>
+                <form noValidate onSubmit={this.onSubmit}>
+                  <TextFieldGroup
+                    placeholder="Name"
+                    name="name"
+                    value={this.state.name}
+                    onChange={this.onChange}
+                    error={errors.name}
+                  />
+                  <TextFieldGroup
+                    placeholder="Email"
+                    name="email"
+                    type="email"
+                    value={this.state.email}
+                    onChange={this.onChange}
+                    error={errors.email}
+                    info=" To create a Gravatar profile image please check https://en.gravatar.com/ for details"
+                  />
+                  <TextFieldGroup
+                    placeholder="Passowrd"
+                    name="password"
+                    type="password"
+                    value={this.state.password}
+                    onChange={this.onChange}
+                    error={errors.password}
+                  />
+                  <TextFieldGroup
+                    placeholder="Confirm Passowrd"
+                    name="password2"
+                    type="password"
+                    value={this.state.password2}
+                    onChange={this.onChange}
+                    error={errors.password2}
+                  />
+                  <input
+                    type="submit"
+                    className="btn btn-info btn-block mt-4"
+                  />
+                </form>
+              </div>
             </div>
           </div>
         </div>

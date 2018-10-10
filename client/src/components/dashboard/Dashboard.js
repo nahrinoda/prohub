@@ -61,12 +61,14 @@ class Dashboard extends Component {
     }
 
     return (
-      <div className="dashboard">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <h1 className="display-4">Dashboard</h1>
-              {dashboardContent}
+      <div className="navBarDark shadow">
+        <div className="dashboar shadow">
+          <div className="container p-5">
+            <div className="row">
+              <div className="col-md-12 shadow">
+                <h1 className="display-4">Dashboard</h1>
+                {dashboardContent}
+              </div>
             </div>
           </div>
         </div>
