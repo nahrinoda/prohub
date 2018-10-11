@@ -2,6 +2,8 @@
 import React, { Component } from "react";
 import isEmpty from "../../validation/is-empty";
 
+import cv from "./mycv.pdf";
+
 class ProfileHeader extends Component {
   render() {
     const { profile } = this.props;
@@ -17,6 +19,7 @@ class ProfileHeader extends Component {
                   src={profile.user.avatar}
                   alt=""
                 />
+                
               </div>
             </div>
             <div className="text-center">
@@ -87,7 +90,10 @@ class ProfileHeader extends Component {
                   >
                     <i className="fab fa-instagram fa-2x" />
                   </a>
+                  
                 )}
+                <a  className="text-white p-2 ml-4" href={cv} target="_blank"><i class="far fa-file-pdf fa-2x" title="Click here"></i></a>My CV
+       
               </p>
             </div>
           </div>

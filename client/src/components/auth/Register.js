@@ -78,7 +78,7 @@ class Register extends Component {
                     info=" Use your Gravatar e-mail to use your image, for more info. go to https://en.gravatar.com/"
                   />
                   <TextFieldGroup
-                    placeholder="Passowrd"
+                    placeholder="Password"
                     name="password"
                     type="password"
                     value={this.state.password}

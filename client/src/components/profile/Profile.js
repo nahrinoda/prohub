@@ -32,16 +32,21 @@ class Profile extends Component {
     } else {
       profileContent = (
         <div>
-        <div className="navBarDarkLongForProfile shadow "></div>
+          <div className="navBarDarkLongForProfile shadow " />
           <div className="row">
             <div className="col-md-4 p-0">
-              <Link to="/profiles" className="btn btn-outline text-dark float-left mt-0">
+              <Link
+                to="/profiles"
+                className="btn btn-outline text-dark float-left mt-0"
+              >
                 Back To Profiles
               </Link>
             </div>
             <div className="col-md-12" />
           </div>
+
           <ProfileHeader profile={profile} />
+
           <ProfileAbout profile={profile} />
           <ProfileCreds
             education={profile.education}
