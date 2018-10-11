@@ -32,8 +32,8 @@ class PostItem extends Component {
     const { post, auth, showActions } = this.props;
 
     return (
-      <div>
-      <div className="card card-body mb-3"></div>
+     
+      <div className="card card-body mb-3">
         <div className="row">
           <div className="col-md-2">
             <a href="profile.html">
@@ -44,7 +44,7 @@ class PostItem extends Component {
               />
             </a>
             <br />
-            <p className="text-center">{post.name}</p>
+            <p className="">{post.name}</p>
           </div>
           <div className="col-md-10">
             <p className="lead">{post.text}</p>
