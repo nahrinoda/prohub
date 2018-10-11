@@ -51,7 +51,7 @@ class Landing extends Component {
                 />
                 <hr />
                 <p className="text-justify text-light">
-                Quicks is a business-oriented web-service that allows job-seekers to add an interactive work portfolio section to thier profile. It is mainly used for professionals who require to exhibit their work portfolio along with their CV for quicker networking and job application.
+                Quicks is a business-oriented web-service that allows job-seekers to add an interactive work portfolio section to their profile. It is mainly used for professionals who require to exhibit their work portfolio along with their CV for quicker networking and job application.
                 </p>
                 <br />
 

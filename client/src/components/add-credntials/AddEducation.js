@@ -63,10 +63,12 @@ class AddEducation extends Component {
     const { errors } = this.state;
 
     return (
+      <div>
+      <div className="navBarDark shadow"></div>
       <div className="add-education">
-        <div className="container">
+        <div className="container shadow">
           <div className="row">
-            <div className="col-md-8 m-auto">
+            <div className="col-md-8 m-auto pt-1">
               <Link to="/dashboard" className="btn btn-light">
                 Go Back
               </Link>
@@ -142,9 +144,11 @@ class AddEducation extends Component {
                   className="btn btn-info btn-block mt-4"
                 />
               </form>
+              <br/>
             </div>
           </div>
         </div>
+      </div>
       </div>
     );
   }

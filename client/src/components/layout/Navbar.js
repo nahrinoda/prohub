@@ -71,7 +71,7 @@ class Navbar extends Component {
             <img src={smalllogo} className="smallLogo"/>
           </Link>  
           <button
-            className="navbar-toggler"
+            className="navbar-toggler text-dark"
             type="button"
             data-toggle="collapse"
             data-target="#mobile-nav"

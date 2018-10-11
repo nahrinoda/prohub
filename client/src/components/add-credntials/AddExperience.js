@@ -64,11 +64,13 @@ class AddExperience extends Component {
     const { errors } = this.state;
 
     return (
+      <div>
+      <div className="navBarDark shadow"></div>
       <div className="add-experience">
-        <div className="container">
+        <div className="container shadow">
           <div className="row">
             <div className="col-md-8 m-auto">
-              <Link to="/dashboard" className="btn btn-light">
+              <Link to="/dashboard" className="btn text-dark mt-1">
                 Go Back
               </Link>
               <h1 className="display-4 text-center">Add Experience</h1>
@@ -143,9 +145,11 @@ class AddExperience extends Component {
                   className="btn btn-info btn-block mt-4"
                 />
               </form>
+              <br/>
             </div>
           </div>
         </div>
+      </div>
       </div>
     );
   }
